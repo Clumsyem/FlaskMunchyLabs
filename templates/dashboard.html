@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+Dashboard
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='/dashboard/style.css')}}">
+
+	<h5>You are logged in</h5>
+	<a href="{{ url_for('logout') }}" class="btn btn-light">Logout</a>
+
+	<form action="#" method="POST">
+		<h3>Add new food to the munchy list!</h3>
+		<div>
+			<h5>Name:</h5>
+					<input type="text" name="name" placeholder="Enter food name" value=""/>
+		</div>
+		<div>
+			<h5>Weight(g):</h5>
+			<input type="number" name="weight" step="0.01" min="0" placeholder="0" value=""/>
+		</div>
+		<div>
+			<h5>Calories(kcal/100g):</h5>
+			<input type="number" name="calories" placeholder="0" value=""/>
+		</div>
+		<input type="submit" value="Submit"/>
+	</form>
+{% endblock %}

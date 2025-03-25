@@ -1,0 +1,42 @@
+body {
+            background: rgba(10,10,10,1);
+            font-family: 'Poppins', sans-serif; /* Font for the page */
+            color: white;
+            position: relative;
+            display: center;
+            justify-content: center;
+            align-item: center;
+        }
+        .container {
+            max-width: 600px; /* Max width for the form container */
+            margin: auto; /* Center the container */
+            background-color: #ffffff; /* White background for the form */
+            padding: 20px; /* Padding inside the container */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+        }
+        h5 {
+            margin-bottom: 5px; /* Space between heading and input */
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%; /* Full width for inputs */
+            padding: 10px; /* Padding inside inputs */
+            margin-bottom: 15px; /* Space between inputs */
+            border: 1px solid #ced4da; /* Border for inputs */
+            border-radius: 4px; /* Rounded corners for inputs */
+        }
+        input[type="submit"] {
+            width: 100%; /* Full width for the submit button */
+            padding: 10px; /* Padding inside the button */
+            background-color: #007bff; /* Primary button color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            border-radius: 4px; /* Rounded corners for button */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .logout-btn {
+            margin-bottom: 20px; /* Space below the logout button */
+        }

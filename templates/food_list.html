@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}
+Food list
+{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='/food_list/style.css')}}">
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Weight (g)</th>
+            <th>Calories (kcal/100g)</th>
+            <th>Calories per serving</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for food in foods %}
+            <tr>
+                <td>{{ food.id }}</td>
+                <td>{{ food.name }}</td>
+                <td>{{ food.weight }}</td>
+                <td>{{ food.calories }}</td>
+                <td>
+                    {% if food.weight > 0 %} 
+                        {{ (food.calories / 100 * food.weight) | round(2) }} 
+                    {% else %}
+                        N/A
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{{ url_for('download_foods') }}">Download Food Data as CSV</a>
+<div></div>
+    <img src="data:image/png;base64,{{ image }}" alt="Calories Histogram" style="width:100%; max-width:600px; margin-bottom:20px;">
+
+{% endblock %}
+

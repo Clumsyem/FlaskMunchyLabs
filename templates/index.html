@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Home Page
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='/home/style.css')}}">
+	<div class="hero">
+		<video autoplay loop muted plays-inline class="back-video">
+			<source src="static/home/backgroundVideo.mp4" type="video/mp4">
+		</video>
+		<nav>
+			<div class="content">
+				<h1> MunchyLab </h1>
+				<a href="/food_list">Explore</a>
+			</div>
+		</nav>
+	</div>
+{% endblock %}

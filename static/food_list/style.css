@@ -1,0 +1,59 @@
+*{
+    megin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgba(10,10,10,1);
+        }
+
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        thead {
+            background-color: #4CAF50; 
+            color: white; 
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left; 
+            border-bottom: 1px solid #ddd;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: rgba(80, 80, 80, 0.3); 
+        }
+
+
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 14px; 
+            }
+        }
+
+  
+        button {
+            background-color: #4CAF50; /* Green button */
+            color: white; /* White text */
+            border: none; /* No border */
+            padding: 10px 20px; /* Padding for button */
+            text-align: center; /* Center text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Inline-block for button */
+            font-size: 16px; /* Font size */
+            margin: 10px 0; /* Margin around button */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }

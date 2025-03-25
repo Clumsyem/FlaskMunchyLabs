@@ -1,0 +1,68 @@
+*{
+	megin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+	width:100%;
+	position: relative;
+	color: white;
+	display: center;
+	justify-content: center;
+	align-item: center;
+	min-height: 100vh;
+	background: rgba(10,10,10,1);
+}
+
+.hero h1{
+	display: center;
+	width:100%;
+	position: relative;
+	justify-content: center;
+	align-item: center;
+	text-align: center;
+}
+
+.hero form{
+	display: center;
+	margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.hero input{
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	font-size: 24px;
+	border: 2px solid #fff;
+	padding: 14px 70px;
+	border-radius: 25px;
+	margin-top: 20px;
+}
+
+.hero a{
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	font-size: 24px;
+	border: 2px solid #fff;
+	padding: 14px 70px;
+	border-radius: 25px;
+	margin-top: 20px;
+}
+
+
+.hero input{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+}
+
+.hero div{
+	display: center;
+}
+
