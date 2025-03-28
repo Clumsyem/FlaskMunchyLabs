@@ -127,7 +127,6 @@ def register():
 #    return render_template("food_list.html", foods=foods)
 
 @app.route("/download_foods", methods=['GET'])
-@login_required
 def download_foods():
     foods = Food.query.all()
     output = io.StringIO()
